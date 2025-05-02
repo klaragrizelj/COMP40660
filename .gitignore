@@ -1,0 +1,9 @@
+# Python caches
+_pycache_/
+*.py[cod]
+
+# Docker
+*.log
+
+# OS files
+.DS_Store

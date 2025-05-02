@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  server:
+    build: .
+    command: python3 ipc_server.py
+    volumes:
+      - ipc_volume:/tmp 
+
+  client:
+    build: .
+    depends_on:
+      - server 
+    command: python3 ipc_client.py
+    volumes:
+      - ipc_volume:/tmp
+
+volumes:
+    ipc_volume:
+
+
