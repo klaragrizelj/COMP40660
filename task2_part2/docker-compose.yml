@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  hash-server:
+    build: .
+    command: python3 ipc_server2.py
+    volumes:
+      - task2_volume:/tmp
+
+  hash-client:
+    build: .
+    depends_on:
+      - hash-server
+    tty: true
+    stdin_open: true
+    command: python3 ipc_client2.py
+    volumes:
+      - task2_volume:/tmp
+
+volumes:
+   task2_volume:
