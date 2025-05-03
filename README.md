@@ -66,7 +66,7 @@ Task 2: Docker Networking
      docker run -dit --name alpine_cont3 --network task2_network alpine ash
      
 3. Test of the container connections with ping commands
-  - Ran the ping command three times to check connection on between each container
+   - Ran the ping command three times to check connection on between each container
     docker exec -it alpine_cont1 ping -c 4 alpine_cont2
     docker exec -it alpine_cont2 ping -c 4 alpine_cont3
     docker exec -it alpine_cont3 ping -c 4 alpine_cont1
