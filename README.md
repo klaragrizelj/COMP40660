@@ -100,7 +100,7 @@ Task 2: Docker Networking
    - The program is tested using the following sequence of commands:
      docker-compose build hash-server
      docker-compose build hash-client
-     docker-compose up -d hash-server; docker-compose run --rm hash-client; docker-compose down
+     docker-compose up -d hash-server; docker-compose run --rm hash-client
 
      GitHub link with Task2 2: https://github.com/klaragrizelj/COMP40660
 
